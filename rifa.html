@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Rifa 300</title>
+</head>
+
+<body>
+    <div class="bgded overlay" style="background-image:url('images/fondo1.jpg');">
+        <!-- Menú desplegable -->
+
+        <div class="dropdown">
+            <nav id="mainav" class="fl_right">
+                <ul class="clear">
+                    <li class="active"><a href="index.html">Inicio</a></li>
+                    <li><a class="drop" href="#">Rifas</a>
+                        <ul>
+                            <li><a href="rifa.html">Rifa 300</a></li>
+                            <li><a href=" ">Disponible</a></li>
+                            <li><a href=" ">Disponible</a></li>
+                            <li><a href=" ">Disponible</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="quienessomos.html">Quienes Somos?</a></li>
+                </ul>
+
+            </nav>
+        </div>
+        <br>
+        <center>
+      
+
+        <h1>Rifa 300</h1>
+        <br>
+        <h3>Para participar,por favor completa el formulario que se presentara a continuacion.
+        <br>
+        Después de enviar el formulario, tu compra será procesada y confirmada. Por favor, espera la confirmación
+        para validar tu participación. ¡Te deseamos mucha suerte en la rifa!</h3>
+    </center>
+
+<!-- Formulario -->
+
+ <div class="Formulario">
+    <form action="enviar_formulario.php" method="POST">
+        <label for="nombre">Nombre y Apellido:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="cedula">C.I. (Sin puntos o espacios):</label><br>
+        <input type="text" id="cedula" name="cedula" required><br><br>
+
+        <label for="tickets">Cantidad de Tickets:</label><br>
+        <input type="number" id="tickets" name="tickets" min="1" required><br><br>
+
+        <label for="referencia"># Comprobante transferencia:</label><br>
+        <input type="text" id="referencia" name="referencia" required><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </form>
+</div>
+
+
+<div class="imagen">
+<center><img src="images/afiche1.jpg"width="50%" height="50%"></center>
+</div>
+
+
+</body>
+
+</html>

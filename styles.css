@@ -1,0 +1,87 @@
+.Formulario {
+        display: flex;
+        justify-content: center; /* Centrado horizontal */
+        align-items: center; /* Centrado vertical */
+        height: 100vh; /* Altura del viewport */
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+
+  
+
+/* Estilos para el menu desplegable */
+
+
+.dropdown {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Estilos para el menu */
+.dropdown ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.dropdown ul li {
+display: inline-block;
+position: relative;
+}
+
+.dropdown ul li a {
+display: block;
+padding: 10px 20px;
+text-decoration: none;
+color: #000;
+}
+
+.dropdown ul ul {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background-color: #fff;
+}
+
+.dropdown ul ul li {
+display: block;
+}
+
+/* Mostrar submenú al pasar la flecha */
+.dropdown ul li:hover > ul {
+display: block;
+}
+.Formulario {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 40vh;
+}
+
+/* Estilos adicionales para el formulario */
+.Formulario form {
+width: 300px; /* Ancho del formulario */
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 8px;
+background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.formulario {
+  flex: 1;
+  margin-right: 20px; /* Espacio entre el formulario y la imagen */
+}
+
+.imagen {
+  flex: 1;
+}
